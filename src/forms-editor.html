@@ -1,0 +1,90 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Form Editors"})
+
+    <!-- quill css -->
+    <link href="assets/libs/quill/quill.core.css" rel="stylesheet" type="text/css" >
+    <link href="assets/libs/quill/quill.bubble.css" rel="stylesheet" type="text/css" >
+    <link href="assets/libs/quill/quill.snow.css" rel="stylesheet" type="text/css" >
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Forms","title":"Editors"})
+
+                <div class="flex flex-col gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Snow Editor</h4>
+
+                            <!-- Quill Editors -->
+                            <div id="snow-editor" style="height: 300px;">
+                                <h3><span class="ql-size-large">Hello World!</span></h3>
+                                <p><br></p>
+                                <h3>This is a simple editable area.</h3>
+                                <p><br></p>
+                                <ul>
+                                    <li>Select a text to reveal the toolbar.</li>
+                                    <li>Edit rich document on-the-fly, so elastic!</li>
+                                </ul>
+                                <p><br></p>
+                                <p>End of simple area</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Bubble Editor</h4>
+
+                            <!-- Bubble Editors -->
+                            <div id="bubble-editor" style="height: 300px;">
+                                <h3><span class="ql-size-large">Hello World!</span></h3>
+                                <p><br></p>
+                                <h3>This is a simple editable area.</h3>
+                                <p><br></p>
+                                <ul>
+                                    <li>Select a text to reveal the toolbar.</li>
+                                    <li>Edit rich document on-the-fly, so elastic!</li>
+                                </ul>
+                                <p><br></p>
+                                <p>End of simple area</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+    
+    @@include('partials/footer-scripts.html')
+
+    <!-- quill js -->
+    <script src="assets/libs/quill/quill.min.js"></script>
+
+    <script src="assets/js/pages/form-editor.js"></script>
+
+</body>
+
+</html>

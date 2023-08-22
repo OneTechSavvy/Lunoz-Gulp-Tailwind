@@ -1,0 +1,18 @@
+//
+// _card.scss
+//
+
+@layer components {
+
+    .card {
+        @apply relative bg-slate-100 border border-gray-200 border-solid flex flex-col break-words bg-clip-border rounded-md h-fit;
+
+        .card-header {
+            @apply py-3 px-6 border-b border-gray-200;
+        }
+    }    
+
+    .card-title {
+        @apply text-base font-semibold text-gray-800;
+    }
+}

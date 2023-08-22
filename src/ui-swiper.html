@@ -1,0 +1,346 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Swiper"})
+
+    <!--Swiper slider css-->
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Components","title":"Swiper"})
+
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Default Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>default-swiper</code> class to set a default swiper.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper default-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-2.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Navigation & Pagination Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>navigation-swiper</code> class to set a swiper with navigation and pagination.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper navigation-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-5.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-6.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Pagination Dynamic Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>pagination-dynamic-swiper</code> class to set a dynamic swiper with pagination.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper pagination-dynamic-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-5.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-6.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-7.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination dynamic-pagination"></div>
+                            </div>
+
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Pagination Fraction Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>pagination-fraction-swiper</code> class to set a fraction swiper with pagination.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper pagination-fraction-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-5.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Pagination Custom Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>pagination-custom-swiper</code> class to set a swiper with custom pagination.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper pagination-custom-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-2.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-3.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination pagination-custom"></div>
+                            </div>
+
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Pagination Progress Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>pagination-progress-swiper</code> class to set a swiper with progress pagination.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper pagination-progress-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-5.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-6.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-7.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Scrollbar Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>pagination-scrollbar-swiper</code> class to set a swiper with scrollbar pagination.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper pagination-scrollbar-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-3.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Vertical Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>vertical-swiper</code> class to set a vertical swiper.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper vertical-swiper rounded" style="height: 324px;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-2.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Mousewheel Control Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>mousewheel-control-swiper</code> class to set a swiper with mousewheel scroll.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper mousewheel-control-swiper rounded" style="height: 324px;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-3.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Effect Fade Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>effect-fade-swiper</code> class to set a swiper with fade effect.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper effect-fade-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-6.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-7.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Effect Creative Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>effect-creative-swiper</code> class to set a swiper with creative custom effect.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper effect-creative-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-5.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-7.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Effect Flip Swiper</h4>
+
+                            <p class="text-gray-400 mb-4">Use <code>effect-flip-swiper</code> class to set a swiper with flip effect.</p>
+
+                            <!-- Swiper -->
+                            <div class="swiper effect-flip-swiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-7.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/small/img-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div><!-- end p-6 -->
+                    </div><!-- end card -->
+                </div>
+                <!--end row-->
+
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    @@include('partials/footer-scripts.html')
+
+    <!--Swiper slider js-->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/pages/swiper.js"></script>
+
+</body>
+
+</html>

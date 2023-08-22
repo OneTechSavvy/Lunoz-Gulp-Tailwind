@@ -1,0 +1,229 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Offcanvas"})
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Components","title":"Offcanvas"})
+
+                <div class="flex flex-col gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Default Example</h4>
+
+                            <button data-fc-type="offcanvas" type="button" class="btn bg-primary text-white">
+                                Open offcanvas
+                            </button>
+
+                            <div class="fc-offcanvas-open:translate-x-0 hidden -translate-x-full rtl:translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-50 bg-white border-r" tabindex="-1">
+                                <div class="flex justify-between items-center py-3 px-4 border-b">
+                                    <h3 class="font-bold text-gray-800">
+                                        Offcanvas title
+                                    </h3>
+                                    <button data-fc-dismiss type="button" class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm">
+                                        <span class="sr-only">Close modal</span>
+                                        <i class="bx bx-x text-xl"></i>
+                                    </button>
+                                </div>
+                                <div class="p-4">
+                                    <p class="text-gray-800">
+                                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Placement</h4>
+                            <div class="flex flex-wrap items-end gap-3">
+                                <button data-fc-type="offcanvas" type="button" class="btn bg-primary text-white">
+                                    Toggle top offcanvas
+                                </button>
+
+                                <div class="fc-offcanvas-open:translate-y-0 -translate-y-full fixed top-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-50 bg-white border-b hidden" tabindex="-1">
+                                    <div class="flex justify-between items-center py-3 px-4 border-b">
+                                        <h3 class="font-bold text-gray-800">
+                                            Offcanvas title
+                                        </h3>
+                                        <button data-fc-dismiss type="button" class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm">
+                                            <span class="sr-only">Close modal</span>
+                                            <i class="bx bx-x text-xl"></i>
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-gray-800">
+                                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button data-fc-type="offcanvas" type="button" class="btn bg-primary text-white">
+                                    Toggle right offcanvas
+                                </button>
+
+                                <div class="fc-offcanvas-open:translate-x-0 translate-x-full rtl:-translate-x-full fixed top-0 end-0 transition-all duration-300 transform h-full max-w-xs w-full  z-50 bg-white border-l hidden" tabindex="-1">
+                                    <div class="flex justify-between items-center py-3 px-4 border-b">
+                                        <h3 class="font-bold text-gray-800">
+                                            Offcanvas title
+                                        </h3>
+                                        <button data-fc-dismiss type="button" class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm">
+                                            <span class="sr-only">Close modal</span>
+                                            <i class="bx bx-x text-xl"></i>
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-gray-800">
+                                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button data-fc-type="offcanvas" type="button" class="btn bg-primary text-white">
+                                    Toggle bottom offcanvas
+                                </button>
+
+                                <div class="fc-offcanvas-open:translate-y-0 translate-y-full fixed bottom-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-50 bg-white border-b hidden" tabindex="-1">
+                                    <div class="flex justify-between items-center py-3 px-4 border-b">
+                                        <h3 class="font-bold text-gray-800">
+                                            Offcanvas title
+                                        </h3>
+                                        <button data-fc-dismiss type="button" class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm">
+                                            <span class="sr-only">Close modal</span>
+                                            <i class="bx bx-x text-xl"></i>
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-gray-800">
+                                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Backdrop</h4>
+
+                            <div class="flex flex-wrap items-end gap-3">
+                                <button data-fc-type="offcanvas" data-fc-scroll="true" type="button" class="btn bg-primary text-white">
+                                    Enable body scrolling
+                                </button>
+
+                                <div class="fc-offcanvas-open:translate-x-0 hidden -translate-x-full rtl:translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-50 bg-white border-r [--body-scroll:true] [--overlay-backdrop:false]" tabindex="-1">
+                                    <div class="flex justify-between items-center py-3 px-4 border-b">
+                                        <h3 class="font-bold text-gray-800">
+                                            Colored with scrolling
+                                        </h3>
+                                        <button data-fc-dismiss type="button" class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm">
+                                            <span class="sr-only">Close modal</span>
+                                            <i class="bx bx-x text-xl"></i>
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-gray-800">
+                                            Try scrolling the rest of the page to see this option in action.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button data-fc-type="offcanvas" data-fc-backdrop="false" data-fc-scroll="true" type="button" class="btn bg-primary text-white">
+                                    Enable backdrop (default)
+                                </button>
+
+                                <div class="fc-offcanvas-open:translate-x-0 hidden -translate-x-full rtl:translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-50 bg-white border-r" tabindex="-1">
+                                    <div class="flex justify-between items-center py-3 px-4 border-b">
+                                        <h3 class="font-bold text-gray-800">
+                                            Offcanvas with backdrop
+                                        </h3>
+                                        <button data-fc-dismiss type="button" class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm">
+                                            <span class="sr-only">Close modal</span>
+                                            <i class="bx bx-x text-xl"></i>
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-gray-800">
+                                            ...
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button data-fc-type="offcanvas" data-fc-behavior="static" type="button" class="btn bg-primary text-white">
+                                    Static Offcanvas
+                                </button>
+
+                                <div class="fc-offcanvas-open:translate-x-0 hidden -translate-x-full rtl:translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-50 bg-white border-r" tabindex="-1">
+                                    <div class="flex justify-between items-center py-3 px-4 border-b">
+                                        <h3 class="font-bold text-gray-800">
+                                            Offcanvas with backdrop
+                                        </h3>
+                                        <button data-fc-dismiss type="button" class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm">
+                                            <span class="sr-only">Close modal</span>
+                                            <i class="bx bx-x text-xl"></i>
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-gray-800">
+                                            ...
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button data-fc-type="offcanvas" data-fc-backdrop="false" data-fc-scroll type="button" class="btn bg-primary text-white">
+                                    Enable both scrolling & backdrop
+                                </button>
+
+                                <div class="fc-offcanvas-open:translate-x-0 hidden -translate-x-full rtl:translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-50 bg-white border-r" tabindex="-1">
+                                    <div class="flex justify-between items-center py-3 px-4 border-b">
+                                        <h3 class="font-bold text-gray-800">
+                                            Backdrop with scrolling
+                                        </h3>
+                                        <button data-fc-dismiss type="button" class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm">
+                                            <span class="sr-only">Close modal</span>
+                                            <i class="bx bx-x text-xl"></i>
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-gray-800">
+                                            Try scrolling the rest of the page to see this option in action.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- end grid-->
+
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+    
+    @@include('partials/footer-scripts.html')
+
+</body>
+
+</html>

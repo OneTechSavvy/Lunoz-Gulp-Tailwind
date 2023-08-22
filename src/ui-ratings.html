@@ -1,0 +1,92 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Ratings"})
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Components","title":"Ratings"})
+
+                <div class="grid 2xl:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Rater Js Example</h4>
+
+                            <div id="basic-rater"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">5 star rater with step</h4>
+
+                            <div id="rater-step"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Random Number Betweeen</h4>
+
+                            <div id="rater-message"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">On hover Event</h4>
+
+
+                            <div>
+                                <div id="rater-onhover" class="align-middle"></div>
+                                <span class="inline-block text-center rounded-full w-6 h-full text-sm bg-info text-white align-middle ms-2"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Clear/Reset rater</h4>
+
+                            <div class="flex items-center">
+                                <div id="raterreset" class="align-middle"></div>
+                                <span class="clear-rating"></span>
+                                <button id="raterreset-button" class="btn btn-sm bg-primary text-white ms-4">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    @@include('partials/footer-scripts.html')
+
+    <!-- rater-js plugin -->
+    <script src="assets/libs/rater-js/index.js"></script>
+
+    <!-- Rating Demo js -->
+    <script src="assets/js/pages/ratings.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Tooltip"})
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Components","title":"Tooltip"})
+
+                <div class="grid 2xl:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Placement Tooltips</h4>
+
+                            <div class="flex flex-wrap gap-2">
+                                <div>
+                                    <button class="btn bg-primary text-white" data-fc-type="tooltip" data-fc-placement="bottom">
+                                        Tooltip Bottom
+                                    </button>
+                                    <div class="bg-slate-700 hidden mt-1 px-2 py-1 rounded transition-all text-white opacity-0 z-50 z-50" role="tooltip">
+                                        Left Tooltip
+                                        <div data-fc-arrow class="bg-slate-700 w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn bg-primary text-white" data-fc-type="tooltip" data-fc-placement="right">
+                                        Tooltip Right
+                                    </button>
+                                    <div class="bg-slate-700 hidden ms-1 px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
+                                        Right Tooltip
+                                        <div data-fc-arrow class="bg-slate-700 w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn bg-primary text-white" data-fc-type="tooltip" data-fc-placement="top">
+                                        Tooltip Top
+                                    </button>
+                                    <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
+                                        Left Tooltip
+                                        <div data-fc-arrow class="bg-slate-700 w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn bg-primary text-white" data-fc-type="tooltip" data-fc-placement="left">
+                                        Tooltip Top
+                                    </button>
+                                    <div class="bg-slate-700 hidden me-1 px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
+                                        Left Tooltip
+                                        <div data-fc-arrow class="bg-slate-700 w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Color Tooltips</h4>
+
+                            <div class="flex flex-wrap gap-2">
+                                <div>
+                                    <button class="btn bg-primary text-white" data-fc-type="tooltip" data-fc-placement="top">
+                                        Primary
+                                    </button>
+                                    <div class="bg-primary hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
+                                        Primary Tooltip
+                                        <div data-fc-arrow class="bg-primary w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn bg-danger text-white" data-fc-type="tooltip" data-fc-placement="top">
+                                        danger
+                                    </button>
+                                    <div class="bg-danger hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
+                                        danger Tooltip
+                                        <div data-fc-arrow class="bg-danger w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn bg-success text-white" data-fc-type="tooltip" data-fc-placement="top">
+                                        success
+                                    </button>
+                                    <div class="bg-success hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
+                                        success Tooltip
+                                        <div data-fc-arrow class="bg-success w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn bg-info text-white" data-fc-type="tooltip" data-fc-placement="top">
+                                        Info
+                                    </button>
+                                    <div class="bg-info hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
+                                        Info Tooltip
+                                        <div data-fc-arrow class="bg-info w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+    
+    @@include('partials/footer-scripts.html')
+
+</body>
+
+</html>

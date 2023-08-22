@@ -1,0 +1,63 @@
+// 
+// _theme-config.scss (:root variable)
+// 
+
+// Font Family (Google Font)
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600&display=swap");
+
+
+// Root Variable
+:root {
+    --tw-body-font-family:           theme(fontFamily.base);
+    --tw-body-bg:                    theme(backgroundColor.white);
+    --tw-body-color:                 theme(colors.slate.500);
+    --tw-sidebar-width:             260px;
+    --tw-topbar-height:             70px;
+    --tw-sidebar-item-padding-x:    15px;
+    --tw-sidebar-item-gap:          5px;
+    --tw-sidebar-link-padding-x:    15px;
+    --tw-sidebar-link-padding-y:    8px;
+    --tw-sidebar-link-item-gap:     10px;
+    --tw-sidebar-item-icon-size:    20px;
+    --tw-sidebar-item-font-size:    15px;
+}
+
+// Light Sidebar
+[data-sidebar-color="light"] {
+    --tw-sidebar-bg:                               theme(backgroundColor.slate.100);
+    --tw-sidebar-item-color:                       theme(colors.gray.500);
+    --tw-sidebar-item-hover-color:                 theme(colors.primary);
+    --tw-sidebar-item-hover-bg:                    theme(backgroundColor.primary/10%);
+    --tw-sidebar-item-active-color:                theme(colors.primary);
+    --tw-sidebar-item-active-bg:                   theme(backgroundColor.primary/12%);
+}
+
+// Dark Sidebar
+[data-sidebar-color="dark"] {
+    --tw-sidebar-bg:                               theme(backgroundColor.neutral.800);
+    --tw-sidebar-item-color:                       theme(colors.neutral.400);
+    --tw-sidebar-item-hover-color:                 theme(colors.white);
+    --tw-sidebar-item-hover-bg:                    theme(backgroundColor.white/5%);
+    --tw-sidebar-item-active-color:                theme(colors.white);
+    --tw-sidebar-item-active-bg:                   theme(backgroundColor.zinc.700/50%);
+}
+
+// Light Topbar
+[data-topbar-color="light"] {
+    --tw-topbar-bg:                               theme(backgroundColor.slate.100);
+    --tw-topbar-item-color:                       theme(colors.gray.500);
+    --tw-topbar-item-hover-color:                 theme(colors.primary);
+    --tw-topbar-item-hover-bg:                    theme(backgroundColor.primary/10%);
+    --tw-topbar-item-active-color:                theme(colors.primary);
+    --tw-topbar-item-active-bg:                   theme(backgroundColor.primary/12%);
+}
+
+// Dark Topbar
+[data-topbar-color="dark"] {
+    --tw-topbar-bg:                               theme(backgroundColor.neutral.800);
+    --tw-topbar-item-color:                       theme(colors.neutral.400);
+    --tw-topbar-item-hover-color:                 theme(colors.white);
+    --tw-topbar-item-hover-bg:                    theme(backgroundColor.white/5%);
+    --tw-topbar-item-active-color:                theme(colors.white);
+    --tw-topbar-item-active-bg:                   theme(backgroundColor.zinc.700/50%);
+}

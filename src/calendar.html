@@ -1,0 +1,120 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Calendar"})
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Menu","title":"Calendar"})
+
+                <div class="grid lg:grid-cols-4 gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <button class="px-3 py-2 rounded bg-primary text-white text-base w-full mb-4" id="btn-new-event"><i class="bx bx-plus"></i> Create New Event</button>
+
+                            <div class="flex flex-col gap-1" id="external-events">
+                                <p class="text-sm text-slate-700 mb-4">Drag and drop your event or click in the calendar</p>
+                                <button class="external-event bg-success px-3 py-2 rounded text-white text-base text-start w-full mb-2" data-class="bg-success">
+                                    <i class="bx bxs-circle me-3 vertical-middle"></i>New Theme Release
+                                </button>
+                                <button class="external-event bg-info px-3 py-2 rounded text-white text-base text-start w-full mb-2" data-class="bg-info">
+                                    <i class="bx bxs-circle me-3 vertical-middle"></i>My Event
+                                </button>
+                                <button class="external-event bg-warning px-3 py-2 rounded text-white text-base text-start w-full mb-2" data-class="bg-warning">
+                                    <i class="bx bxs-circle me-3 vertical-middle"></i>Meet manager
+                                </button>
+                                <button class="external-event bg-danger px-3 py-2 rounded text-white text-base text-start w-full mb-2" data-class="bg-danger">
+                                    <i class="bx bxs-circle me-3 vertical-middle"></i>Create New theme
+                                </button>
+                            </div>
+
+                            <div class="mt-5">
+                                <h5 class="text-center mb-2">How It Works ?</h5>
+
+                                <ul class="ps-3">
+                                    <li class="text-sm text-slate-700 mb-3">
+                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </li>
+                                    <li class="text-sm text-slate-700 mb-3">
+                                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.
+                                    </li>
+                                    <li class="text-sm text-slate-700 mb-3">
+                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-3">
+                        <div class="card">
+                            <div class="p-6">
+                                <div id="calendar"></div>
+                            </div>
+                        </div> <!-- end card -->
+
+                        <div id="event-modal" class="fc-modal-open:opacity-100 hidden opacity-0 w-full h-full fixed top-0 start-0 z-50 transition-all duration-500">
+                            <div class="flex justify-center m-5">
+                                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                                    <div class="flex justify-between items-center py-2.5 px-4 border-b">
+                                        <h3 class="font-bold text-gray-800">
+                                            Modal title
+                                        </h3>
+                                        <button data-fc-dismiss type="button" class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-sm">
+                                            <span class="sr-only">Close</span>
+                                            <i class="bx bx-x text-xl"></i>
+                                        </button>
+                                    </div>
+                                    <div class="p-4 overflow-y-auto">
+                                        <p class="mt-1 text-gray-800">
+                                            This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.
+                                        </p>
+                                    </div>
+                                    <div class="flex justify-end items-center gap-x-2 py-2.5 px-4 border-t">
+                                        <button data-fc-dismiss type="button" class="py-2.5 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary transition-all text-sm" data-fc-dismiss>
+                                            Close
+                                        </button>
+                                        <a class="py-2.5 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all text-sm" href="#">
+                                            Save changes
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    @@include('partials/footer-scripts.html')
+
+    <!-- Fullcalendar Plugin Js -->
+    <script src="assets/libs/fullcalendar/index.global.min.js"></script>
+
+    <!-- Calendar Js -->
+    <script src="assets/js/pages/calendar.js"></script>
+
+</body>
+
+</html>

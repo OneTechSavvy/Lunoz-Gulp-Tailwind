@@ -1,0 +1,278 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Dropdown"})
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Components","title":"Dropdown"})
+
+                <div class="grid 2xl:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Default</h4>
+
+                            <div class="flex flex-wrap gap-2">
+                                <button data-fc-type="dropdown" type="button" class="btn bg-primary text-white">
+                                    Actions <i class="bx bx-chevron-down text-base ms-1"></i>
+                                </button>
+
+                                <div class="hidden fc-dropdown-open:opacity-100 opacity-0 z-50 transition-all duration-300 bg-white border shadow-md rounded-lg p-2">
+                                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                        Action
+                                    </a>
+                                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                        Another action
+                                    </a>
+                                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                        Something else here
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Dropdown Color Variant</h4>
+
+                            <div class="flex flex-wrap gap-2">
+                                <div>
+                                    <button data-fc-type="dropdown" type="button" class="btn bg-primary text-white">
+                                        Primary <i class="bx bx-chevron-down text-base"></i>
+                                    </button>
+
+                                    <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] z-50 transition-[margin,opacity] duration-300 mt-2 bg-white shadow-md rounded-lg p-2">
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Another action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Something else here
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button data-fc-type="dropdown" type="button" class="btn bg-secondary text-white">
+                                        Secondary <i class="bx bx-chevron-down text-lg"></i>
+                                    </button>
+
+                                    <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] z-50 transition-[margin,opacity] duration-300 mt-2 bg-white shadow-md rounded-lg p-2">
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Another action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Something else here
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button data-fc-type="dropdown" type="button" class="btn bg-success text-white">
+                                        Success <i class="bx bx-chevron-down text-lg"></i>
+                                    </button>
+
+                                    <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] z-50 transition-[margin,opacity] duration-300 mt-2 bg-white shadow-md rounded-lg p-2">
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Another action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Something else here
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button data-fc-type="dropdown" type="button" class="btn bg-warning text-white">
+                                        Warning <i class="bx bx-chevron-down text-lg"></i>
+                                    </button>
+
+                                    <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] z-50 transition-[margin,opacity] duration-300 mt-2 bg-white shadow-md rounded-lg p-2">
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Another action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Something else here
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button data-fc-type="dropdown" type="button" class="btn bg-danger text-white">
+                                        Danger <i class="bx bx-chevron-down text-lg"></i>
+                                    </button>
+
+                                    <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] z-50 transition-[margin,opacity] duration-300 mt-2 bg-white shadow-md rounded-lg p-2">
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Another action
+                                        </a>
+                                        <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                            Something else here
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="2xl:col-span-2">
+                        <div class="card">
+                            <div class="p-6">
+                                <h4 class="card-title mb-4">Alignment options</h4>
+
+                                <div class="flex flex-wrap gap-2">
+                                    <div>
+                                        <button data-fc-type="dropdown" data-fc-placement="right-start" type="button" class="btn bg-primary text-white">
+                                            Dropdown Right <i class="bx bx-chevron-down text-lg"></i>
+                                        </button>
+
+                                        <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] p-2 shadow-md rounded-lg z-50 transition-[margin,opacity] duration-300 bg-white">
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Another action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Something else here
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button data-fc-type="dropdown" data-fc-placement="left-start" type="button" class="btn bg-primary text-white">
+                                            Dropdown left <i class="bx bx-chevron-down text-lg"></i>
+                                        </button>
+
+                                        <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] p-2 shadow-md rounded-lg z-50 transition-[margin,opacity] duration-300 bg-white">
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Another action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Something else here
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button data-fc-type="dropdown" data-fc-placement="top" type="button" class="btn bg-primary text-white">
+                                            Dropdown Top <i class="bx bx-chevron-down text-lg"></i>
+                                        </button>
+
+                                        <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] p-2 shadow-md rounded-lg z-50 transition-[margin,opacity] duration-300 bg-white">
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Another action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Something else here
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button data-fc-type="dropdown" data-fc-placement="bottom" type="button" class="btn bg-primary text-white">
+                                            Dropdown Bottom <i class="bx bx-chevron-down text-lg"></i>
+                                        </button>
+
+                                        <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] p-2 shadow-md rounded-lg z-50 transition-[margin,opacity] duration-300 bg-white">
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Another action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Something else here
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button data-fc-type="dropdown" data-fc-placement="top-start" type="button" class="btn bg-primary text-white">
+                                            Top Start <i class="bx bx-chevron-down text-lg"></i>
+                                        </button>
+
+                                        <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] p-2 shadow-md rounded-lg z-50 transition-[margin,opacity] duration-300 bg-white">
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Another action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Something else here
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button data-fc-type="dropdown" data-fc-placement="top-end" type="button" class="btn bg-primary text-white">
+                                            Top End <i class="bx bx-chevron-down text-lg"></i>
+                                        </button>
+
+                                        <div class="fc-dropdown-open:opacity-100 hidden opacity-0 w-44 min-w-[120px] p-2 shadow-md rounded-lg z-50 transition-[margin,opacity] duration-300 bg-white">
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Another action
+                                            </a>
+                                            <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                                Something else here
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    @@include('partials/footer-scripts.html')
+
+</body>
+
+</html>

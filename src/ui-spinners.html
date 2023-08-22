@@ -1,0 +1,116 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Spinners"})
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Components","title":"Spinners"})
+
+                <div class="grid 2xl:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Example</h4>
+                            <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-primary rounded-full" role="status" aria-label="loading">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Color variants</h4>
+
+                            <div class="flex flex-wrap gap-3">
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-gray-800 rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-gray-400 rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-red-600 rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-yellow-600 rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-green-600 rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-primary rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-purple-600 rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-pink-600 rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-orange-600 rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Sizes</h4>
+
+                            <div class="space-x-2">
+                                <div class="animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-primary rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-primary rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                <div class="animate-spin inline-block w-8 h-8 border-[3px] border-current border-t-transparent text-primary rounded-full" role="status" aria-label="loading">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+        
+    @@include('partials/footer-scripts.html')
+
+</body>
+
+</html>

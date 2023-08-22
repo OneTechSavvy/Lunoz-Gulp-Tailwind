@@ -1,0 +1,45 @@
+//
+// _topbar.scss
+//
+
+.app-header {
+    @apply sticky top-0 border-b;
+    z-index: 35;
+    background: $topbar-bg;
+    height: $topbar-height;
+
+    .nav-link {
+        color: $topbar-item-color;
+        @apply rounded-full bg-transparent transition-all ease-in-out;
+
+        &:hover {
+            color: $topbar-item-hover-color;
+            background-color: $topbar-item-hover-bg;
+        }
+
+        &:is(.open, .show, .active, :active, :focus) {
+            color: $topbar-item-active-color;
+            background-color: $topbar-item-active-bg;
+        }
+    }
+
+    .logo-box {
+        @apply lg:hidden;
+    }
+}
+
+// Fullscreen exit icon
+.fullscreen-enable {
+    .ph-corners-out::before {
+        content: "\ea6f";
+    }
+}
+
+// Full Size Sidebar
+html[data-sidebar-view="mobile"] {
+    .app-header {
+        .logo-box {
+            @apply flex;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Popover"})
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Components","title":"Popover"})
+
+                <div class="card">
+                    <div class="p-6">
+                        <h4 class="card-title mb-4">Four directions Popovers</h4>
+
+                        <div class="flex flex-wrap gap-3">
+                            <div>
+                                <button type="button" data-fc-type="tooltip" data-fc-placement="top" data-fc-trigger="click" class="btn bg-primary text-white">
+                                    Popover on Top
+                                </button>
+                                <div class="bg-gray-400 hidden px-3 py-1 rounded-md transition-all text-white opacity-0 z-50">
+                                    Top popover
+                                    <div data-fc-arrow class="bg-gray-400 w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type="button" data-fc-type="tooltip" data-fc-placement="bottom" data-fc-trigger="click" class="btn bg-primary text-white">
+                                    Popover on Bottom
+                                </button>
+                                <div class="bg-gray-400 hidden px-3 py-1 rounded-md transition-all text-white opacity-0 z-50">
+                                    Bottom popover
+                                    <div data-fc-arrow class="bg-gray-400 w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type="button" data-fc-type="tooltip" data-fc-placement="left" data-fc-trigger="click" class="btn bg-primary text-white">
+                                    Popover on Left
+                                </button>
+                                <div class="bg-gray-400 hidden px-3 py-1 rounded-md transition-all text-white opacity-0 z-50">
+                                    <div data-fc-arrow class="bg-gray-400 w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                    Left popover
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type="button" data-fc-type="tooltip" data-fc-placement="right" data-fc-trigger="click" class="btn bg-primary text-white">
+                                    Popover on Right
+                                </button>
+                                <div class="bg-gray-400 hidden px-3 py-1 rounded-md transition-all text-white opacity-0 z-50">
+                                    Right popover
+                                    <div data-fc-arrow class="bg-gray-400 w-2.5 h-2.5 rotate-45 -z-10 rounded-[1px]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    @@include('partials/footer-scripts.html')
+
+</body>
+
+</html>

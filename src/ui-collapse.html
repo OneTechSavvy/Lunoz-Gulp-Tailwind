@@ -1,0 +1,232 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Collapse"})
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        @@include('partials/sidebar.html')
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Components","title":"Collapse"})
+
+                <div class="grid 2xl:grid-cols-2 gap-6 mb-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Collapse</h4>
+
+                            <button data-fc-type="collapse" data-fc-target="collapseWithTarget" type="button" class="btn bg-primary text-white">
+                                Collapse <i class="bx bx-chevron-down fc-collapse-open:rotate-180 ms-2 transition-all text-xl"></i>
+                            </button>
+
+                            <div id="collapseWithTarget" class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                <p class="pt-5 text-gray-800">
+                                    Build modern websites faster with Tailwind CSS - a utility-first CSS framework that allows you to create any design directly in your HTML. Say goodbye to complex class names and embrace the simplicity of utility classes. Stay consistent with colors, spacing, typography, and more, using a well-engineered design system. Get started with beautifully designed components and templates for your projects. Try Tailwind CSS and see how it revolutionizes your web development experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Read More Collapse</h4>
+
+                            <a href="#" data-fc-type="collapse" type="button" class="flex items-center text-primary">
+                                Read&nbsp;
+                                <span class="fc-collapse-open:hidden">more</span>
+                                <span class="fc-collapse-open:block hidden">less</span>
+                                <i class="bx bx-chevron-down fc-collapse-open:rotate-180 ms-2 transition-all text-xl"></i>
+                            </a>
+
+                            <div class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                <p class="pt-5 text-gray-800">
+                                    Build modern websites faster with Tailwind CSS - a utility-first CSS framework that allows you to create any design directly in your HTML. Say goodbye to complex class names and embrace the simplicity of utility classes. Stay consistent with colors, spacing, typography, and more, using a well-engineered design system. Get started with beautifully designed components and templates for your projects. Try Tailwind CSS and see how it revolutionizes your web development experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid 2xl:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Accordion</h4>
+
+                            <div data-fc-type="accordion" class="rounded border divide-y border-gray-200 divide-slate-900/10">
+                                <!-- Accordion item one -->
+                                <button data-fc-type="collapse" class="fc-collapse-open:text-primary p-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                    Accordion #1
+                                    <i class="bx bx-chevron-up fc-collapse-open:rotate-180 ms-auto transition-all text-xl"></i>
+                                </button>
+                                <div class="w-full overflow-hidden transition-[height] duration-300">
+                                    <p class="p-3 text-gray-800">
+                                        Build modern websites faster with Tailwind CSS - a utility-first CSS framework that allows you to create any design directly in your HTML. Say goodbye to complex class names and embrace the simplicity of utility classes. Stay consistent with colors, spacing, typography, and more, using a well-engineered design system. Get started with beautifully designed components and templates for your projects. Try Tailwind CSS and see how it revolutionizes your web development experience.
+                                    </p>
+                                </div>
+
+                                <!-- Accordion item two -->
+                                <button data-fc-type="collapse" class="fc-collapse-open:text-primary p-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                    Accordion #2
+                                    <i class="bx bx-chevron-up fc-collapse-open:rotate-180 ms-auto transition-all text-xl"></i>
+                                </button>
+                                <div class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                    <p class="p-3 text-gray-800">
+                                        Build modern websites faster with Tailwind CSS - a utility-first CSS framework that allows you to create any design directly in your HTML. Say goodbye to complex class names and embrace the simplicity of utility classes. Stay consistent with colors, spacing, typography, and more, using a well-engineered design system. Get started with beautifully designed components and templates for your projects. Try Tailwind CSS and see how it revolutionizes your web development experience.
+                                    </p>
+                                </div>
+
+                                <!-- Accordion item three -->
+                                <button data-fc-type="collapse" class="fc-collapse-open:text-primary p-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                    Accordion #3
+                                    <i class="bx bx-chevron-up fc-collapse-open:rotate-180 ms-auto transition-all text-xl"></i>
+                                </button>
+                                <div class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                    <p class="p-3 text-gray-800">
+                                        Build modern websites faster with Tailwind CSS - a utility-first CSS framework that allows you to create any design directly in your HTML. Say goodbye to complex class names and embrace the simplicity of utility classes. Stay consistent with colors, spacing, typography, and more, using a well-engineered design system. Get started with beautifully designed components and templates for your projects. Try Tailwind CSS and see how it revolutionizes your web development experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">No arrow</h4>
+
+                            <div data-fc-type="accordion">
+                                <!-- Accordion item one -->
+                                <button data-fc-type="collapse" class="fc-collapse-open:text-primary py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                    Accordion #1
+                                </button>
+                                <div class="w-full overflow-hidden transition-[height] duration-300">
+                                    <p class="text-gray-800">
+                                        Build modern websites faster with Tailwind CSS - a utility-first CSS framework that allows you to create any design directly in your HTML. Say goodbye to complex class names and embrace the simplicity of utility classes. Stay consistent with colors, spacing, typography, and more, using a well-engineered design system. Get started with beautifully designed components and templates for your projects. Try Tailwind CSS and see how it revolutionizes your web development experience.
+                                    </p>
+                                </div>
+
+                                <!-- Accordion item two -->
+                                <button data-fc-type="collapse" class="fc-collapse-open:text-primary py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                    Accordion #2
+                                </button>
+                                <div class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                    <p class="text-gray-800">
+                                        Build modern websites faster with Tailwind CSS - a utility-first CSS framework that allows you to create any design directly in your HTML. Say goodbye to complex class names and embrace the simplicity of utility classes. Stay consistent with colors, spacing, typography, and more, using a well-engineered design system. Get started with beautifully designed components and templates for your projects. Try Tailwind CSS and see how it revolutionizes your web development experience.
+                                    </p>
+                                </div>
+
+                                <!-- Accordion item three -->
+                                <button data-fc-type="collapse" class="fc-collapse-open:text-primary py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                    Accordion #3
+                                </button>
+                                <div class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                    <p class="text-gray-800">
+                                        Build modern websites faster with Tailwind CSS - a utility-first CSS framework that allows you to create any design directly in your HTML. Say goodbye to complex class names and embrace the simplicity of utility classes. Stay consistent with colors, spacing, typography, and more, using a well-engineered design system. Get started with beautifully designed components and templates for your projects. Try Tailwind CSS and see how it revolutionizes your web development experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h4 class="card-title mb-4">Nested</h4>
+
+                            <div data-fc-type="accordion" id="parent-accordion">
+                                <!-- Accordion item one -->
+                                <button data-fc-type="collapse" data-fc-parent="parent-accordion" class="fc-collapse-open:text-primary py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                    <i class="bx bx-plus block fc-collapse-open:hidden"></i>
+                                    <i class="bx bx-minus hidden fc-collapse-open:block"></i>
+                                    Accordion #1
+                                </button>
+                                <div class="w-full overflow-hidden transition-[height] duration-300">
+                                    <div data-fc-type="accordion" class="ps-6" id="child-accordion">
+                                        <!-- Accordion sub item one -->
+                                        <button data-fc-type="collapse" data-fc-parent="child-accordion" class="fc-collapse-open:text-primary py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                            <i class="bx bx-plus block fc-collapse-open:hidden"></i>
+                                            <i class="bx bx-minus hidden fc-collapse-open:block"></i>
+                                            Sub accordion #1
+                                        </button>
+                                        <div class="w-full overflow-hidden transition-[height] duration-300">
+                                            <p class="text-gray-800">
+                                                Build modern websites faster with Tailwind CSS - a utility-first CSS framework that allows you to create any design directly in your HTML. Say goodbye to complex class names and embrace the simplicity of utility classes. Stay consistent with colors, spacing, typography, and more, using a well-engineered design system. Get started with beautifully designed components and templates for your projects. Try Tailwind CSS and see how it revolutionizes your web development experience.
+                                            </p>
+                                        </div>
+
+                                        <!-- Accordion sub item two -->
+                                        <button data-fc-type="collapse" data-fc-parent="child-accordion" class="fc-collapse-open:text-primary py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                            <i class="bx bx-plus block fc-collapse-open:hidden"></i>
+                                            <i class="bx bx-minus hidden fc-collapse-open:block"></i>
+                                            Sub accordion #2
+                                        </button>
+                                        <div class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                            <p class="text-gray-800">
+                                                <em>This is the second item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                            </p>
+                                        </div>
+
+                                        <!-- Accordion sub item three -->
+                                        <button data-fc-type="collapse" data-fc-parent="child-accordion" class="fc-collapse-open:text-primary py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                            <i class="bx bx-plus block fc-collapse-open:hidden"></i>
+                                            <i class="bx bx-minus hidden fc-collapse-open:block"></i>
+                                            Sub accordion #3
+                                        </button>
+                                        <div class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                            <p class="text-gray-800">
+                                                <em>This is the first item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion item two -->
+                                <button data-fc-type="collapse" data-fc-parent="parent-accordion" class="fc-collapse-open:text-primary py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500">
+                                    <i class="bx bx-plus block fc-collapse-open:hidden"></i>
+                                    <i class="bx bx-minus hidden fc-collapse-open:block"></i>
+                                    Accordion #2
+                                </button>
+                                <div class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                    <p class="text-gray-800">
+                                        <em>This is the second item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                    </p>
+                                </div>
+
+                                <!-- Accordion item three -->
+                                <button data-fc-type="collapse" data-fc-parent="parent-accordion" class="fc-collapse-open:text-primary py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500" e">
+                                    <i class="bx bx-plus block fc-collapse-open:hidden"></i>
+                                    <i class="bx bx-minus hidden fc-collapse-open:block"></i>
+                                    Accordion #3
+                                </button>
+                                <div class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                    <p class="text-gray-800">
+                                        <em>This is the first item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    @@include('partials/footer-scripts.html')
+
+</body>
+
+</html>
